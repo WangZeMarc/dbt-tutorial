@@ -1,0 +1,19 @@
+version: 2
+models:
+- name: title_principals
+  description: ''
+  config:
+      +materialized: table 
+  columns:
+  - name: tconst
+    description: ''
+  - name: ordering
+    description: ''
+  - name: nconst
+    description: ''
+  - name: category
+    description: ''
+  - name: job
+    description: ''
+  - name: characters
+    description: ''

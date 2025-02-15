@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: movie_ratings_by_decade
+    description: "Analyzes how movie ratings change over time by grouping movies by decade."
+    columns:
+      - name: time_interval
+        description: "Decade in which the movies were released."
+      - name: total_num
+        description: "Total number of movies in the given time interval."
+      - name: ave_num_votes
+        description: "Average number of votes received by movies in this time interval."
+      - name: ave_rating
+        description: "Average rating of movies in this time interval."

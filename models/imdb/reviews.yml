@@ -1,0 +1,21 @@
+version: 2
+models:
+- name: reviews
+  description: ''
+  config:
+      +materialized: table 
+  columns:
+  - name: review
+    description: ''
+  - name: split
+    description: ''
+  - name: label
+    description: ''
+  - name: movie_id
+    description: ''
+  - name: reviewer_rating
+    description: ''
+  - name: movie_url
+    description: ''
+  - name: title
+    description: ''

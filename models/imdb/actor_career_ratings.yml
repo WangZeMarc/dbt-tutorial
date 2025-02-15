@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: actor_rating_evolution
+    description: "Analyzes how an actor’s average movie rating changes throughout their career."
+    columns:
+      - name: primary_name
+        description: "Name of the actor."
+      - name: num_year
+        description: "Number of distinct years in which the actor has movies."
+      - name: start_year
+        description: "Year when the movie was released."
+      - name: ave_rating
+        description: "Average movie rating for the actor in a given year."

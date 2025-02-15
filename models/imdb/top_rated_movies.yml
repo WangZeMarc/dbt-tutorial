@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: top_voted_movies
+    description: "A table containing the top 10 most voted movies"
+    config:
+      materialized: table  # Ensures this model is a table
+    columns:
+      - name: tconst
+        description: "Unique identifier for the movie"
+        tests:
+          - not_null
+          - unique
+      - name: num_votes
+        description: "Total number of votes received"
+        tests:
+          - not_null

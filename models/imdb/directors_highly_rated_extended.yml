@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: directors_highly_rated_extended
+    description: "Identifies directors who consistently produce highly-rated content with additional metadata."
+    columns:
+      - name: primary_name
+        description: "Name of the director."
+      - name: start_year_fixed
+        description: "Earliest start year of the director's work."
+      - name: ave_rating_fixed
+        description: "Average rating of the director's works, rounded to one decimal place."
+      - name: num_works
+        description: "Total number of highly-rated works directed by this director."
+      - name: works_name
+        description: "Identifier for works linked to the director."

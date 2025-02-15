@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: directors_highly_rated
+    description: "Identifies directors who consistently produce highly-rated content."
+    columns:
+      - name: primary_name
+        description: "Name of the director."
+      - name: num_works
+        description: "Total number of highly-rated works directed by this director."

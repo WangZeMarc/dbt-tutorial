@@ -1,0 +1,13 @@
+version: 2
+
+seeds:
+  - name: Test_for_DBT
+    description: "This sheet is used to test in dbt program"
+    columns:
+      - name: id
+        description: "First column description"
+      - name: name
+        description: "Second column description"
+      - name: age
+        description: "Second column description"
+

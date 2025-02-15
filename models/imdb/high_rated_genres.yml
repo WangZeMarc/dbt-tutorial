@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: high_rated_genres
+    description: "Analyzes which movie genres consistently receive high ratings over different time periods."
+    columns:
+      - name: time_interval
+        description: "Time period in which the movies were released (grouped by decades)."
+      - name: genre
+        description: "The genre of the movie."
+      - name: num_movie
+        description: "Total number of movies within this genre and time period."
+      - name: ave_rating
+        description: "Average rating of movies in this genre and time period."

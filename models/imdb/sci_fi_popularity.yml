@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: sci_fi_popularity
+    description: "Tracks the number of Sci-Fi movies released per year and their average rating over the last 50 years."
+    columns:
+      - name: year
+        description: "Release year of the Sci-Fi movies."
+      - name: movie_num
+        description: "Total number of Sci-Fi movies released in that year."
+      - name: ave_rating
+        description: "Average rating of Sci-Fi movies in that year."

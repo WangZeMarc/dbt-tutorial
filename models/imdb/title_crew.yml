@@ -1,0 +1,13 @@
+version: 2
+models:
+- name: title_crew
+  description: ''
+  config:
+      +materialized: table 
+  columns:
+  - name: tconst
+    description: ''
+  - name: directors
+    description: ''
+  - name: writers
+    description: ''

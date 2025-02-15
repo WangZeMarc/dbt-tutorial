@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: top_rated_actors
+    description: "A table containing actors who have appeared in the highest number of top-rated movies"
+    config:
+      materialized: table  # Ensures this model is a table
+    columns:
+      - name: primary_name
+        description: "Name of the actor"
+        tests:
+          - not_null
+      - name: counts_per_actor
+        description: "Total number of top-rated movies the actor has appeared in"
+        tests:
+          - not_null

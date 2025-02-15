@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: prolific_actors_by_genre
+    description: "Finds the most prolific actors in a specific genre (e.g., Comedy)."
+    columns:
+      - name: genre
+        description: "The movie genre (e.g., Comedy, Drama, Action)."
+      - name: primary_name
+        description: "Name of the actor."
+      - name: uni_num
+        description: "Unique count of movies the actor has appeared in within the specified genre."

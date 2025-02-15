@@ -1,0 +1,19 @@
+version: 2
+models:
+- name: name_basics
+  description: ''
+  config:
+      +materialized: table
+  columns:
+  - name: nconst
+    description: ''
+  - name: primary_name
+    description: ''
+  - name: birth_year
+    description: ''
+  - name: death_year
+    description: ''
+  - name: primary_profession
+    description: ''
+  - name: known_for_titles
+    description: ''

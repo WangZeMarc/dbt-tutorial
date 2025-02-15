@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: top_countries_highly_rated_movies
+    description: "Identifies which countries produce the most highly-rated movies in each genre."
+    columns:
+      - name: region
+        description: "The country or region where the movie was produced."
+      - name: genre
+        description: "The movie's genre."
+      - name: ave_rating
+        description: "The average rating of movies in this genre for the given country."
+      - name: num_movies
+        description: "The total number of movies produced in this genre for the given country."

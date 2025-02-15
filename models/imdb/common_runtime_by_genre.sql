@@ -1,0 +1,31 @@
+{{ config(
+    materialized='table'
+) }}
+
+WITH temporary_table AS (
+    SELECT 
+        genre, 
+        runtime_minutes, 
+        COUNT(tconst) AS frequency
+    FROM {{ ref('title_basics') }},
+    UNNEST(SPLIT(genres, ',')) AS genre
+    WHERE runtime_minutes IS NOT NULL 
+        AND TRIM(title_type) = 'movie'
+    GROUP BY genre, runtime_minutes
+    ORDER BY genre
+)
+
+SELECT 
+    genre, 
+    runtime_minutes,
+    frequency
+FROM (
+    SELECT 
+        genre, 
+        runtime_minutes, 
+        frequency,
+        ROW_NUMBER() OVER (PARTITION BY genre ORDER BY frequency DESC) AS rank_num
+    FROM temporary_table
+)
+WHERE rank_num = 1
+ORDER BY frequency DESC

@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: top_franchises
+    description: "Identifies which movie franchises have the highest average IMDb ratings."
+    columns:
+      - name: primary_title
+        description: "The title of the franchise or movie series."
+      - name: ave_rating
+        description: "Average IMDb rating of the movies in the franchise."
+      - name: num_mov
+        description: "Total number of movies in the franchise."

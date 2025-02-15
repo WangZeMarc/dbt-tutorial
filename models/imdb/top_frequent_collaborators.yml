@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: top_frequent_collaborators
+    description: "Identifies the most frequent collaborations between actors, directors, and writers within specific movie genres."
+    columns:
+      - name: genre
+        description: "The genre in which the collaboration occurs."
+      - name: name1
+        description: "The first collaborator's name (actor, director, writer, etc.)."
+      - name: role1
+        description: "The role of the first collaborator (e.g., actor, director, writer)."
+      - name: name2
+        description: "The second collaborator's name (actor, director, writer, etc.)."
+      - name: role2
+        description: "The role of the second collaborator (e.g., actor, director, writer)."
+      - name: num_movie
+        description: "The number of movies they have collaborated on."

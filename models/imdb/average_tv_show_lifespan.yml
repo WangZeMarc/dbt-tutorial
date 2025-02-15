@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: average_tv_show_lifespan
+    description: "Calculates the average lifespan (number of seasons) of top-rated TV shows."
+    columns:
+      - name: ave_season
+        description: "The average number of seasons of TV shows with top-rated episodes."

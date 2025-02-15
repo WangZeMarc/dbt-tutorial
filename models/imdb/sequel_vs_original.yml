@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: sequel_vs_original
+    description: "Analyzes whether sequels generally perform better or worse than the original movies based on IMDb ratings."
+    columns:
+      - name: ori_or_seq
+        description: "Indicates whether the movie is an 'Original' or a 'Sequel'."
+      - name: num_mov
+        description: "Total number of movies in each category."
+      - name: ave_rating
+        description: "Average IMDb rating of movies in each category."

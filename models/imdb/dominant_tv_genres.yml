@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dominant_tv_genres
+    description: "Identifies which genres dominate TV series production based on the number of TV series per genre."
+    columns:
+      - name: genre
+        description: "The genre of the TV series."
+      - name: num_per_genre
+        description: "The total count of TV series for each genre."

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: directors_rating_improvement
+    description: "Tracks how directors' average movie ratings have changed over the years."
+    columns:
+      - name: primary_name
+        description: "Name of the director."
+      - name: num_year
+        description: "Number of distinct years in which the director has directed movies."
+      - name: start_year
+        description: "The release year of the movie."
+      - name: ave_rating_fixed
+        description: "The director's average movie rating for a given year."

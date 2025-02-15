@@ -1,0 +1,20 @@
+vversion: 2
+sources:
+  - name: imdb
+    database: the-field-448907-r6
+    schema: imdb
+    tables:
+      - name: name_basics
+      - name: reviews
+      - name: title_akas
+      - name: title_basics
+      - name: title_crew
+      - name: title_episode
+      - name: title_principals
+      - name: title_ratings
+
+        freshness:
+          error_after:
+            count: 2
+            period: day
+        loaded_at_field: "CAST(_LATEST_DATE AS TIMESTAMP)"

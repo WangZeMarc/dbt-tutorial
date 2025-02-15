@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: common_runtime_by_genre
+    description: "Finds the most common runtime (in minutes) for movies in each genre."
+    columns:
+      - name: genre
+        description: "The genre of the movie."
+      - name: runtime_minutes
+        description: "The most frequently occurring runtime for movies in this genre."
+      - name: frequency
+        description: "Number of movies with this specific runtime in the given genre."

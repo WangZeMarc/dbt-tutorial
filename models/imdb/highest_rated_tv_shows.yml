@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: highest_rated_tv_shows
+    description: "Finds TV shows with the highest-rated episodes."
+    columns:
+      - name: parent_tconst
+        description: "The unique identifier of the TV show."
+      - name: ave_rating_fixed
+        description: "The average rating of the highest-rated episodes, rounded to one decimal place."

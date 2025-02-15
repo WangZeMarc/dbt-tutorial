@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: popular_90s_movies
+    description: "Identifies movies from the 1990s that are still popular today based on rating and vote count."
+    columns:
+      - name: tconst
+        description: "Unique identifier for the movie."
+      - name: num_votes
+        description: "Number of votes the movie has received."
+      - name: average_rating
+        description: "The movie's average rating."
+      - name: start_year
+        description: "The release year of the movie."

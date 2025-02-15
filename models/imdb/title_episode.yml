@@ -1,0 +1,15 @@
+version: 2
+models:
+- name: title_episode
+  description: ''
+  config:
+      +materialized: table 
+  columns:
+  - name: tconst
+    description: ''
+  - name: parent_tconst
+    description: ''
+  - name: season_number
+    description: ''
+  - name: episode_number
+    description: ''

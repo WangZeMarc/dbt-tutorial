@@ -1,0 +1,13 @@
+version: 2
+models:
+- name: title_ratings
+  description: ''
+  config:
+      +materialized: table 
+  columns:
+  - name: tconst
+    description: ''
+  - name: average_rating
+    description: ''
+  - name: num_votes
+    description: ''

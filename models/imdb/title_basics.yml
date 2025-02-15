@@ -1,0 +1,25 @@
+version: 2
+models:
+- name: title_basics
+  description: ''
+  config:
+      +materialized: table 
+  columns:
+  - name: tconst
+    description: ''
+  - name: title_type
+    description: ''
+  - name: primary_title
+    description: ''
+  - name: original_title
+    description: ''
+  - name: is_adult
+    description: ''
+  - name: start_year
+    description: ''
+  - name: end_year
+    description: ''
+  - name: runtime_minutes
+    description: ''
+  - name: genres
+    description: ''

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: top_actor_director_pairings
+    description: "Identifies the best actor-director pairs based on the highest-rated movies."
+    columns:
+      - name: actor_name
+        description: "The name of the actor/actress."
+      - name: director_name
+        description: "The name of the director."
+      - name: ave_rating
+        description: "The average rating of movies directed by this director featuring this actor."
+      - name: num_movie
+        description: "The number of movies they have collaborated on."

@@ -1,0 +1,24 @@
+name: 'dbt_martech_campaign_etl'
+version: '1.0.0'
+profile: 'dbt_martech_campaign_etl'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_martech_campaign_etl:
+    +persist_docs:
+      relation: true
+      columns: true
+    +materialized: view  # This applies only to models in `dbt_martech_campaign_etl`
+  
+  my_imdb:
+    +materialized: table  # Override for `my_imdb` models

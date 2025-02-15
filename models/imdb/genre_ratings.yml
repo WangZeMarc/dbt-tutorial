@@ -1,0 +1,16 @@
+version: 2  # This must be at the top!
+
+models:
+  - name: genre_ratings
+    description: "Aggregated average ratings per genre for the last 10 years"
+    config:
+      +materialized: table
+    columns:
+      - name: genre
+        description: "The movie genre"
+        tests:
+          - not_null
+      - name: ave_rating_grouped
+        description: "Average rating for this genre rounded to 2 decimals"
+        tests:
+          - not_null

@@ -1,0 +1,23 @@
+version: 2
+models:
+- name: title_akas
+  description: ''
+  config:
+      +materialized: table 
+  columns:
+  - name: title_id
+    description: ''
+  - name: ordering
+    description: ''
+  - name: title
+    description: ''
+  - name: region
+    description: ''
+  - name: language
+    description: ''
+  - name: types
+    description: ''
+  - name: attributes
+    description: ''
+  - name: is_original_title
+    description: ''
